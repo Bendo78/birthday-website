@@ -145,7 +145,7 @@ const loveNotes = [
   },
 ];
 
-const TOTAL_PAGES = 5;
+const TOTAL_PAGES = 4;
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -203,43 +203,6 @@ function PageHero({ onNext }: { onNext: () => void }) {
           Commencer notre histoire
           <ArrowRight size={18} />
         </button>
-      </div>
-    </div>
-  );
-}
-
-// ── PAGE 2: OUR STORY ─────────────────────────────────────────────
-function PageTimeline() {
-  return (
-    <div className="w-full h-full overflow-y-auto" style={{ background: "#fdf6f0" }}>
-      <div className="max-w-4xl mx-auto px-6 py-16">
-        <div className="text-center mb-16">
-          <SectionLabel>les chapitres de nous</SectionLabel>
-          <SectionHeading>Notre Histoire</SectionHeading>
-        </div>
-        <div className="relative">
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2" style={{ background: "linear-gradient(to bottom, transparent, #d4a0a0 10%, #d4a0a0 90%, transparent)" }} />
-          <div className="flex flex-col gap-14">
-            {timelineEntries.map((entry, i) => {
-              const isLeft = i % 2 === 0;
-              return (
-                <div key={i} className="relative flex flex-col md:flex-row items-center gap-6 md:gap-0">
-                  <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-2 border-white z-10" style={{ background: "#c97b84", boxShadow: "0 0 0 4px rgba(201,123,132,0.2)" }} />
-                  <div className={`w-full md:w-1/2 ${isLeft ? "md:pr-14" : "md:order-2 md:pl-14"}`}>
-                    <div className="rounded-2xl overflow-hidden shadow-md" style={{ background: "#f2e4e1" }}>
-                      <img src={entry.img} alt={entry.title} className="w-full object-cover" style={{ height: 220 }} />
-                    </div>
-                  </div>
-                  <div className={`w-full md:w-1/2 ${isLeft ? "md:order-2 md:pl-14" : "md:pr-14"}`}>
-                    <p className="text-xs tracking-[0.2em] uppercase mb-2" style={{ fontFamily: "'Lato', sans-serif", color: "#c97b84", fontWeight: 700 }}>{entry.date}</p>
-                    <h3 className="text-2xl mb-3" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}>{entry.title}</h3>
-                    <p className="leading-relaxed" style={{ fontFamily: "'Lato', sans-serif", fontWeight: 300, color: "#9e7575", fontSize: "1.05rem" }}>{entry.text}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -375,11 +338,20 @@ function EnvelopeCard({ imgs, alt, note }: { imgs: string[]; alt: string; note: 
             <div className="flex items-center justify-center mb-3">
               <Heart size={14} fill="#c97b84" color="#c97b84" />
             </div>
-            {/* Show first image in revealed state */}
-            <img src={imgs[0]} alt={alt} className="w-full object-cover rounded block mb-3" style={{ height: 150 }} />
+            {/* Show first image in revealed state — click to reopen the full-screen photo view */}
+            <img
+              src={imgs[0]}
+              alt={alt}
+              onClick={() => setStage("preview")}
+              className="w-full object-cover rounded block mb-3 cursor-pointer"
+              style={{ height: 150 }}
+            />
             {imgs.length > 1 && (
-              <p style={{ textAlign: "center", fontFamily: "'Lato', sans-serif", fontSize: "0.6rem", letterSpacing: "0.12em", color: "#9e7575", marginBottom: "0.5rem" }}>
-                +{imgs.length - 1} photo{imgs.length > 2 ? "s" : ""}
+              <p
+                onClick={() => setStage("preview")}
+                style={{ textAlign: "center", fontFamily: "'Lato', sans-serif", fontSize: "0.6rem", letterSpacing: "0.12em", color: "#9e7575", marginBottom: "0.5rem", cursor: "pointer" }}
+              >
+                +{imgs.length - 1} photo{imgs.length > 2 ? "s" : ""} · voir toutes
               </p>
             )}
             <p className="text-center leading-snug" style={{ fontFamily: "'Dancing Script', cursive", fontSize: "1.05rem", color: "#5a3e2b" }}>
@@ -536,12 +508,11 @@ export default function App() {
   const pages = [
     <PageHero onNext={next} />,
     <PageLoveNotes />,
-    <PageTimeline />,
     <PageGallery />,
     <PageLetter onOpenGift={() => setGiftOpen(true)} />,
   ];
 
-  const pageLabels = ["Accueil", "Petites Lettres", "Notre Histoire", "Souvenirs", "La Lettre"];
+  const pageLabels = ["Accueil", "Petites Lettres", "Souvenirs", "La Lettre"];
 
   return (
     <div className="fixed inset-0 flex flex-col" style={{ fontFamily: "'Lato', sans-serif", background: "#fdf6f0" }}>
