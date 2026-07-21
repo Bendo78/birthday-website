@@ -431,16 +431,15 @@ function PageLetter({ onOpenGift }: { onOpenGift: () => void }) {
           <div className="relative z-10">
             <p className="mb-2" style={{ fontFamily: "'Dancing Script', cursive", fontSize: "1.05rem", color: "#7a5c3a" }}>Mon cœur,</p>
             <p className="leading-loose mb-5" style={{ fontFamily: "'Dancing Script', cursive", fontSize: "1.15rem", color: "#5a3e2b", lineHeight: 1.9 }}>
-              Le jour où tu es née, le monde est devenu un endroit plus doux, plus beau — même s'il m'a fallu des années pour te trouver et le comprendre vraiment. Tu portes une chaleur qui rend chaque pièce plus lumineuse, chaque moment ordinaire digne d'être gardé précieusement.
-            </p>
+              Le jour où tu es née, le monde a gagné son grain de folie le plus adorable même s'il m'a fallu des années pour te trouver et réaliser que j'avais mis la main sur la meilleure personne qui existe. Tu portes une énergie qui transforme n'importe quelle pièce en fête improvisée, et un moment ordinaire avec toi devient instantanément un souvenir que je garde précieusement entre deux fous rires provoqués par une de tes blagues que toi seule trouves drôles (et que je finis toujours par trouver drôles aussi, contre ma volonté).            </p>
             <p className="leading-loose mb-5" style={{ fontFamily: "'Dancing Script', cursive", fontSize: "1.15rem", color: "#5a3e2b", lineHeight: 1.9 }}>
-              Je t'ai vue rire aux larmes pour les choses les plus bêtes, et je suis restée à tes côtés dans tes moments les plus silencieux aussi. Ces deux versions de toi sont mes préférées. Ces deux versions de toi sont la raison pour laquelle je crois en quelque chose comme le destin.
+              Je t'ai vue rire encore et encore sans jamais t'arrêter, je t'ai vue me rage bait sans t'arrêter aussi, et perdre et gagner aussi en étant fiers. Quel que soit nos moments, ce ne sont que les meilleurs — quand on pense pareil sans le vouloir, ou juste quand on n'est pas d'accord et que c'est okay ! (vous m'avez bien appris). T'es ma princesse bubble gum, la madame pleine d'énergie qui nous rend tous heureux avec ce sourire, et je tenais à montrer qu'il n'y a pas que moi qui t'aime vraiment énormément.
             </p>
             <p className="leading-loose mb-8" style={{ fontFamily: "'Dancing Script', cursive", fontSize: "1.15rem", color: "#5a3e2b", lineHeight: 1.9 }}>
-              Joyeux anniversaire, mon amour. Que cette année t'apporte tout ce que ton beau cœur mérite — et que tu saches toujours à quel point tu es aimée, infiniment, éperdument, joyeusement.
+              Joyeux anniversaire, ma princesse. Que cette année t'apporte tout ce que ton beau cœur mérite et que tu saches toujours à quel point tu es aimée, infiniment, éperdument, joyeusement et pas que par moi mais par nous tous.
             </p>
             <div className="flex flex-col items-end">
-              <p style={{ fontFamily: "'Dancing Script', cursive", fontSize: "2rem", color: "#7a5c3a", fontWeight: 700, lineHeight: 1.2 }}>Nassim</p>
+              <p style={{ fontFamily: "'Dancing Script', cursive", fontSize: "2rem", color: "#7a5c3a", fontWeight: 700, lineHeight: 1.2 }}>D'un homme simple qui essaye de te rendre heureuse</p>
               <div style={{ width: 80, height: 2, background: "linear-gradient(90deg, transparent, #c97b84 40%, transparent)", marginTop: 4 }} />
             </div>
           </div>
