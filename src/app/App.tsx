@@ -129,7 +129,7 @@ const loveNotes = [
   {
     imgs: [photo("perla-1.png"), photo("perla-2.png"), photo("perla-3.png")],
     alt: "De Perla",
-    note: "De Perla : Une grande amie qui t'aime énormément mais toujours en retard, désolée.",
+    note: "De Perla : Lisa, je ne te dirai jamais assez à quel point je t'aime et je t'admire. Tu es drôle, intelligente, réfléchie, ouverte d'esprit, bienveillante, créative, indépendante, toujours à l'écoute, toujours là pour me soutenir… et beaucoup, beaucoup trop stylée. Franchement, tu relèves la moyenne de l'humanité à toi toute seule. Je ne comprends pas comment les gens font pour vivre sans avoir une Lisa dans leur vie. Moi, en tout cas, je ne testerai jamais. On sera encore là à 90 ans : toujours à se raconter des potins, danser jusqu'au bout de la nuit (ou jusqu'à 22h parce qu'on aura mal aux genoux), se raconter tous nos problèmes, et surtout réussir à se retrouver dans des plans bourbiers… mais hilarants. Merci d'être toi. Je t'aime trop, trop, trop.",
     rotate: "1deg",
   },
   {
