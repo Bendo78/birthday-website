@@ -216,7 +216,7 @@ function PageGallery() {
         </div>
         {galleryImages.length === 0 ? (
           <p className="text-center" style={{ fontFamily: "'Lato', sans-serif", color: "#9e7575" }}>
-            L'amitie est l'une des plus belle histoire que l'on peut avoir dans la vie
+            Ajoute des photos dans src/assets/gallery pour les voir apparaître ici.
           </p>
         ) : (
           <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
@@ -231,7 +231,6 @@ function PageGallery() {
     </div>
   );
 }
-
 // ── ENVELOPE CARD ─────────────────────────────────────────────────
 // stage: "closed" → click → "preview" (full-screen carousel) → click backdrop → "revealed"
 function EnvelopeCard({ imgs, alt, note }: { imgs: string[]; alt: string; note: string }) {
