@@ -48,95 +48,95 @@ const galleryImages = [
 ];
 
 // Each envelope can have ONE or MULTIPLE images — just add more URLs to the imgs array
-const loveNotes = [
+const loveNotes = [const loveNotes = [
   {
     imgs: [
-      "https://i.ibb.co/PzGDW32M/photo1.jpg", // ← remplace par tes vrais liens directs (i.ibb.co/...)
-      "https://i.ibb.co/67HPzN6n/photo2.jpg",
-      "https://i.ibb.co/Ld1G6cX3/photo3.jpg",
-      "https://i.ibb.co/hxXrw4Hw/photo4.jpg",
-      "https://i.ibb.co/Q73kV9ZY/photo5.jpg",
+      photo("amelie-1.jpg"), photo("amelie-2.jpg"), photo("amelie-3.jpg"),
+      photo("amelie-4.jpg"), photo("amelie-5.jpg"), photo("amelie-6.jpg"),
+      photo("amelie-7.jpg"),
     ],
-    alt: "De Noa",
-    note: "De Noa : Dommage, j’ai pas trouvé de photos récentes et de photos quand on était toutes petites, merci d’être mon amie depuis 15 ans ! Je t’aime, j’espère qu’on aura l’occasion de se voir plus souvent cette année ! ",
+    alt: "De Amélie",
+    note: "De Amélie : Depuis le collège, on a partagé tellement de souvenirs et je suis vraiment heureuse de t'avoir dans ma vie. Merci pour tous ces moments, nos rires et cette belle amitié qui dure au fil des années. Je te souhaite tout le bonheur du monde, plein de réussite, d'amour et de beaux projets. Profite bien de ta journée, tu le mérites tellement.",
     rotate: "-2deg",
   },
   {
-    imgs: [
-      "https://i.ibb.co/3YBSf9sC/2373dddc-1d45-42e5-b4ba-22072127eab3.webp",
-      "https://media.discordapp.net/attachments/1528797136341307414/1528800067455287348/321683d7-c05a-4f60-9310-ad0c9f345af1.jpg?ex=6a60ef03&is=6a5f9d83&hm=1cd2fdf22eea63fe58c961a36866c762f51748a1d2199ddfaa6bb2693f5542a5&=&format=webp&width=1020&height=680",
-      "https://media.discordapp.net/attachments/1528797136341307414/1528800255565369384/7cc9f45f-3eba-4dff-a874-c7f3dd1d30c5.jpg?ex=6a60ef30&is=6a5f9db0&hm=8b86bcf053dad1bf0fe0effa7d3ed642ba3816b38346c164644be46562a10b8b&=&format=webp&width=510&height=680",
-      "https://ibb.co/dwjyj3Yy/photo9.jpg",
-      "https://ibb.co/MyNSc19b/photo10.jpg",
-   
-    ],
-    alt: "De Leya",
-    note: "De Leya : Joyeux anniversaire, Lisa 💫Tu peins la vie si bien qu’elle devrait te verser des droits d’auteur.Que cette année soit aussi pétillante que ton sourire et tes teinturesContinue de briller, d’éblouir sans mesure,Mais laisse un peu de talent aux autres… par charité ! ❤️🖤",
+    imgs: [photo("clarisse-1.jpg"), photo("clarisse-2.jpg")],
+    alt: "De Clarisse",
+    note: "De Clarisse : Joyeux anniversaire ma beeewlllee ! Tellement contente d'être restée pote avec toi et qu'on continue à se capter de temps en temps malgré nos edt chargés. Trop de souvenirs en soirées dont ton ancien chez toi restera toujours le QG. Un jour faudrait qu'on retourne se bronzer la nouille à Merville, trop bons souvenirs aussi. Gros bisouilles, reste géniale.",
     rotate: "1.5deg",
   },
   {
     imgs: [
-      "https://images.unsplash.com/photo-1562887003-7a63e3fef78d?w=400&h=400&fit=crop&auto=format",
+      photo("clemence-1.png"), photo("clemence-2.png"),
+      photo("clemence-3.png"), photo("clemence-4.png"),
     ],
-    alt: "Love letter and flowers",
-    note: "A lifetime with you still wouldn’t feel like enough time.",
+    alt: "De Clémence",
+    note: "De Clémence : Joyeux anniversaire. Tu es une des personnes les plus importantes dans ma vie. J'espère pouvoir finir vieille et aigrie avec toi. Gros bisous, je t'aime.",
     rotate: "-1deg",
   },
   {
     imgs: [
-      "https://images.unsplash.com/photo-1490750967868-88df5691cc8e?w=400&h=400&fit=crop&auto=format",
+      photo("jihane-1.jpg"), photo("jihane-2.jpg"), photo("jihane-3.jpg"),
+      photo("jihane-4.jpg"), photo("jihane-5.jpg"),
     ],
-    alt: "Pink roses",
-    note: "You make ordinary Tuesday evenings feel like something worth remembering.",
+    alt: "De Jihane",
+    note: "De Jihane : Lisa, je ne sais pas si tu t'en souviens, mais toi et Noa avez été les premières personnes à qui j'ai adressé la parole au collège. J'arrivais d'une autre ville, je ne connaissais personne, et il faut croire que tu as inspiré confiance à la Jihane d'il y a 11 ans. Le collège n'aura pas vraiment été le temps de la découverte, c'est au lycée qu'on s'est un peu plus rapprochées. Et aujourd'hui je te connais sous plusieurs de tes formes : l'artiste, la game master, choupi, Denis Brogniart (au fait, c'est pour quand l'épreuve des poteaux ?), la fêtarde (merci pour toutes ces soirées), la baroudeuse qui part conquérir le Mexique... et j'en passe. Bref, tout ça pour dire : joyeux anniversaire. Je suis contente d'avoir parlé à la bonne personne ce jour-là.",
     rotate: "1.5deg",
   },
   {
     imgs: [
-      "https://images.unsplash.com/photo-1490750967868-88df5691cc8e?w=400&h=400&fit=crop&auto=format",
+      photo("leya-1.jpg"), photo("leya-2.jpg"), photo("leya-3.jpg"),
+      photo("leya-4.jpg"), photo("leya-5.jpg"), photo("leya-6.jpg"),
     ],
-    alt: "Pink roses",
-    note: "You make ordinary Tuesday evenings feel like something worth remembering.",
+    alt: "De Leya",
+    note: "De Leya : Joyeux anniversaire, Lisa 💫 Tu peins la vie si bien qu'elle devrait te verser des droits d'auteur. Que cette année soit aussi pétillante que ton sourire et tes teintures. Continue de briller, d'éblouir sans mesure, mais laisse un peu de talent aux autres… par charité ! ❤️🖤",
+    rotate: "-1.5deg",
+  },
+  {
+    imgs: [photo("lisa-1.jpg"), photo("lisa-2.jpg"), photo("lisa-3.jpg")],
+    alt: "De Lisa",
+    note: "De Lisa : Voir photos.",
+    rotate: "1deg",
+  },
+  {
+    imgs: [
+      photo("marie-amelie-1.jpg"), photo("marie-amelie-2.jpg"), photo("marie-amelie-3.jpg"),
+      photo("marie-amelie-4.jpg"), photo("marie-amelie-5.jpg"), photo("marie-amelie-6.jpg"),
+      photo("marie-amelie-7.jpg"), photo("marie-amelie-8.jpg"), photo("marie-amelie-9.jpg"),
+    ],
+    alt: "De Marie-Amélie",
+    note: "De Marie-Amélie : Joyeux anniversaire ma beeewlllee ! Tellement contente d'être restée pote avec toi et qu'on continue à se capter de temps en temps malgré nos edt chargés. Trop de souvenirs en soirées dont ton ancien chez toi restera toujours le QG. Un jour faudrait qu'on retourne se bronzer la nouille à Merville, trop bons souvenirs aussi. Gros bisouilles, reste géniale.",
+    rotate: "-2deg",
+  },
+  {
+    imgs: [photo("melissa-1.jpg"), photo("melissa-2.jpg")],
+    alt: "De Melissa",
+    note: "De Melissa : Voir photos.",
     rotate: "1.5deg",
   },
   {
     imgs: [
-      "https://images.unsplash.com/photo-1490750967868-88df5691cc8e?w=400&h=400&fit=crop&auto=format",
+      photo("noa-1.jpg"), photo("noa-2.jpg"), photo("noa-3.jpg"),
+      photo("noa-4.jpg"), photo("noa-5.jpg"),
     ],
-    alt: "Pink roses",
-    note: "You make ordinary Tuesday evenings feel like something worth remembering.",
-    rotate: "1.5deg",
+    alt: "De Noa",
+    note: "De Noa : Dommage, j'ai pas trouvé de photos récentes et de photos quand on était toutes petites, merci d'être mon amie depuis 15 ans ! Je t'aime, j'espère qu'on aura l'occasion de se voir plus souvent cette année !",
+    rotate: "-1deg",
   },
-   {
-    imgs: [
-      "https://images.unsplash.com/photo-1490750967868-88df5691cc8e?w=400&h=400&fit=crop&auto=format",
-    ],
-    alt: "Pink roses",
-    note: "You make ordinary Tuesday evenings feel like something worth remembering.",
-    rotate: "1.5deg",
+  {
+    imgs: [photo("perla-1.png"), photo("perla-2.png"), photo("perla-3.png")],
+    alt: "De Perla",
+    note: "De Perla : Une grande amie qui t'aime énormément mais toujours en retard, désolée.",
+    rotate: "1deg",
   },
   {
     imgs: [
-      "https://images.unsplash.com/photo-1490750967868-88df5691cc8e?w=400&h=400&fit=crop&auto=format",
+      photo("thib-1.jpg"), photo("thib-2.jpg"), photo("thib-3.jpg"),
+      photo("thib-4.jpg"), photo("thib-5.jpg"), photo("thib-6.jpg"),
     ],
-    alt: "Pink roses",
-    note: "You make ordinary Tuesday evenings feel like something worth remembering.",
-    rotate: "1.5deg",
-  },
-   {
-    imgs: [
-      "https://images.unsplash.com/photo-1490750967868-88df5691cc8e?w=400&h=400&fit=crop&auto=format",
-    ],
-    alt: "Pink roses",
-    note: "You make ordinary Tuesday evenings feel like something worth remembering.",
-    rotate: "1.5deg",
-  },
-  {
-    imgs: [
-      "https://images.unsplash.com/photo-1490750967868-88df5691cc8e?w=400&h=400&fit=crop&auto=format",
-    ],
-    alt: "Pink roses",
-    note: "You make ordinary Tuesday evenings feel like something worth remembering.",
-    rotate: "1.5deg",
+    alt: "De Thib",
+    note: "De Thib : Ma chère Lisa, je pense que je n'aurais jamais assez de merci à te dire pour te montrer toute ma gratitude. Tu as toujours su être là pour moi dans les meilleurs et dans les pires moments. Dès que je repense à nous 2, j'ai cette soirée chez Perla, notre première rencontre, qui revient, et nous 2 qui dansons toute la soirée alors qu'on se connaissait depuis 2 min ! Je te remercie de m'avoir fait connaître tout ce beau monde que tu as autour de toi, tu as toujours été quelqu'un de très généreuse et je t'en serai éternellement reconnaissant !! Qui l'eût cru à notre première rencontre que 7 ans après on en serait là, main dans la main ! Merci d'être l'amie formidable, douce et gentille que tu es. Pour cela je t'aime fort Lisa et je te souhaite un excellent anniversaire.",
+    rotate: "-1.5deg",
   },
 ];
 
