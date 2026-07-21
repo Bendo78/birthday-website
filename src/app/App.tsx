@@ -38,14 +38,12 @@ const timelineEntries = [
   },
 ];
 
-const galleryImages = [
-  { id: "1518199266247-5301b466f8e9", h: 320, alt: "Couple walking in golden light" },
-  { id: "1490750967868-88df5691cc8e", h: 260, alt: "Pink roses in bloom" },
-  { id: "1519741497674-4f2e867e9427", h: 380, alt: "Romantic candlelight dinner" },
-  { id: "1516589091380-5d8f80a6b9d8", h: 290, alt: "Hands intertwined" },
-  { id: "1471086569508-084571b0a9d0", h: 340, alt: "Sunset silhouette of couple" },
-  { id: "1562887003-7a63e3fef78d", h: 270, alt: "Dried flowers and love letters" },
-];
+// Automatically picks up every photo dropped into src/assets/gallery/ —
+// no code changes needed to add more, just add files to that folder.
+const galleryModules = import.meta.glob("../assets/gallery/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}", { eager: true, import: "default" });
+const galleryImages = Object.entries(galleryModules)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([path, src]) => ({ src: src as string, alt: "Beau souvenir" }));
 
 // Each envelope can have ONE or MULTIPLE images — just add more URLs to the imgs array
 // Helper: builds a path to a file in public/photos/, working both in local
@@ -207,7 +205,6 @@ function PageHero({ onNext }: { onNext: () => void }) {
     </div>
   );
 }
-
 // ── PAGE 3: GALLERY ───────────────────────────────────────────────
 function PageGallery() {
   return (
@@ -217,13 +214,19 @@ function PageGallery() {
           <SectionLabel>gravés dans le temps</SectionLabel>
           <SectionHeading>Beaux Souvenirs</SectionHeading>
         </div>
-        <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
-          {galleryImages.map((img, i) => (
-            <div key={i} className="break-inside-avoid mb-4 rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer" style={{ background: "#f2e4e1" }}>
-              <img src={`https://images.unsplash.com/photo-${img.id}?w=600&h=${img.h}&fit=crop&auto=format`} alt={img.alt} className="w-full block" style={{ height: img.h }} />
-            </div>
-          ))}
-        </div>
+        {galleryImages.length === 0 ? (
+          <p className="text-center" style={{ fontFamily: "'Lato', sans-serif", color: "#9e7575" }}>
+            Ajoute des photos dans src/assets/gallery pour les voir apparaître ici.
+          </p>
+        ) : (
+          <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
+            {galleryImages.map((img, i) => (
+              <div key={i} className="break-inside-avoid mb-4 rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer" style={{ background: "#f2e4e1" }}>
+                <img src={img.src} alt={img.alt} className="w-full block" />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
