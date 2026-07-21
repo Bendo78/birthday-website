@@ -119,8 +119,8 @@ const loveNotes = [
   },
   {
     imgs: [
-      photo("noa-1.jpg"), photo("noa-2.jpg"), photo("noa-3.jpg"),
-      photo("noa-4.jpg"), photo("noa-5.jpg"),
+      photo("Noa-1.jpg"), photo("Noa-2.jpg"), photo("Noa-3.jpg"),
+      photo("Noa-4.jpg"), photo("Noa-5.jpg"),
     ],
     alt: "De Noa",
     note: "De Noa : Dommage, j'ai pas trouvé de photos récentes et de photos quand on était toutes petites, merci d'être mon amie depuis 15 ans ! Je t'aime, j'espère qu'on aura l'occasion de se voir plus souvent cette année !",
