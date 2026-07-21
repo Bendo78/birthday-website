@@ -48,7 +48,7 @@ const galleryImages = [
 ];
 
 // Each envelope can have ONE or MULTIPLE images — just add more URLs to the imgs array
-const loveNotes = [const loveNotes = [
+const loveNotes = [
   {
     imgs: [
       photo("amelie-1.jpg"), photo("amelie-2.jpg"), photo("amelie-3.jpg"),
