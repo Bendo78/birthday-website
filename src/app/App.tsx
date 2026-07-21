@@ -198,7 +198,7 @@ function PageHero({ onNext }: { onNext: () => void }) {
           className="inline-flex items-center gap-3 px-10 py-4 rounded-full text-white font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
           style={{ background: "linear-gradient(135deg, #c97b84 0%, #d4a0a0 100%)", boxShadow: "0 4px 24px rgba(201,123,132,0.35)", fontFamily: "'Lato', sans-serif" }}
         >
-          Commencer notre histoire
+          Commencer
           <ArrowRight size={18} />
         </button>
       </div>
