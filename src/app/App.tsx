@@ -48,6 +48,11 @@ const galleryImages = [
 ];
 
 // Each envelope can have ONE or MULTIPLE images — just add more URLs to the imgs array
+// Helper: builds a path to a file in public/photos/, working both in local
+// dev and once deployed under a GitHub Pages subfolder.
+function photo(filename: string) {
+  return `${import.meta.env.BASE_URL}photos/${filename}`;
+}
 const loveNotes = [
   {
     imgs: [
