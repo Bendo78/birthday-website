@@ -260,7 +260,7 @@ function EnvelopeCard({ imgs, alt, note }: { imgs: string[]; alt: string; note: 
             style={{ maxWidth: 420, width: "100%", animation: "popIn 0.45s cubic-bezier(0.34,1.4,0.64,1)" }}
             onClick={e => e.stopPropagation()}
           >
-            <div style={{ background: "#fdf5e4", borderRadius: 12, padding: "1.75rem", boxShadow: "0 24px 80px rgba(100,60,40,0.35)", border: "1px solid rgba(180,140,90,0.2)" }}>
+            <div style={{ background: "#fdf5e4", borderRadius: 12, padding: "1.75rem", boxShadow: "0 24px 80px rgba(100,60,40,0.35)", border: "1px solid rgba(180,140,90,0.2)", maxHeight: "85vh", overflowY: "auto" }}>
               {/* Hearts */}
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Heart size={12} fill="#c97b84" color="#c97b84" style={{ opacity: 0.5 }} />
