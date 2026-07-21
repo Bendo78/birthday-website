@@ -96,7 +96,7 @@ const loveNotes = [
     rotate: "-1.5deg",
   },
   {
-    imgs: [photo("lisa-1.jpg"), photo("lisa-2.jpg"), photo("lisa-3.jpg")],
+    imgs: [photo("Lisa-1.jpg"), photo("Lisa-2.jpg"), photo("Lisa-3.jpg")],
     alt: "De Lisa",
     note: "De Lisa : Voir photos.",
     rotate: "1deg",
