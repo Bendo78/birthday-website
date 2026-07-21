@@ -79,8 +79,8 @@ const loveNotes = [
   },
   {
     imgs: [
-      photo("jihane-1.jpg"), photo("jihane-2.jpg"), photo("jihane-3.jpg"),
-      photo("jihane-4.jpg"), photo("jihane-5.jpg"),
+      photo("Jihane-1.jpg"), photo("Jihane-2.jpg"), photo("Jihane-3.jpg"),
+      photo("Jihane-4.jpg"), photo("Jihane-5.jpg"),
     ],
     alt: "De Jihane",
     note: "De Jihane : Lisa, je ne sais pas si tu t'en souviens, mais toi et Noa avez été les premières personnes à qui j'ai adressé la parole au collège. J'arrivais d'une autre ville, je ne connaissais personne, et il faut croire que tu as inspiré confiance à la Jihane d'il y a 11 ans. Le collège n'aura pas vraiment été le temps de la découverte, c'est au lycée qu'on s'est un peu plus rapprochées. Et aujourd'hui je te connais sous plusieurs de tes formes : l'artiste, la game master, choupi, Denis Brogniart (au fait, c'est pour quand l'épreuve des poteaux ?), la fêtarde (merci pour toutes ces soirées), la baroudeuse qui part conquérir le Mexique... et j'en passe. Bref, tout ça pour dire : joyeux anniversaire. Je suis contente d'avoir parlé à la bonne personne ce jour-là.",
@@ -88,8 +88,8 @@ const loveNotes = [
   },
   {
     imgs: [
-      photo("leya-1.jpg"), photo("leya-2.jpg"), photo("leya-3.jpg"),
-      photo("leya-4.jpg"), photo("leya-5.jpg"), photo("leya-6.jpg"),
+      photo("Leya-1.jpg"), photo("Leya-2.jpg"), photo("Leya-3.jpg"),
+      photo("Leya-4.jpg"), photo("Leya-5.jpg"), photo("Leya-6.jpg"),
     ],
     alt: "De Leya",
     note: "De Leya : Joyeux anniversaire, Lisa 💫 Tu peins la vie si bien qu'elle devrait te verser des droits d'auteur. Que cette année soit aussi pétillante que ton sourire et tes teintures. Continue de briller, d'éblouir sans mesure, mais laisse un peu de talent aux autres… par charité ! ❤️🖤",
@@ -103,16 +103,16 @@ const loveNotes = [
   },
   {
     imgs: [
-      photo("marie-amelie-1.jpg"), photo("marie-amelie-2.jpg"), photo("marie-amelie-3.jpg"),
-      photo("marie-amelie-4.jpg"), photo("marie-amelie-5.jpg"), photo("marie-amelie-6.jpg"),
-      photo("marie-amelie-7.jpg"), photo("marie-amelie-8.jpg"), photo("marie-amelie-9.jpg"),
+      photo("Marie-amelie-1.jpg"), photo("Marie-amelie-2.jpg"), photo("Marie-amelie-3.jpg"),
+      photo("Marie-amelie-4.jpg"), photo("Marie-amelie-5.jpg"), photo("Marie-amelie-6.jpg"),
+      photo("Marie-amelie-7.jpg"), photo("Marie-amelie-8.jpg"), photo("Marie-amelie-9.jpg"),
     ],
     alt: "De Marie-Amélie",
     note: "De Marie-Amélie : Joyeux anniversaire ma beeewlllee ! Tellement contente d'être restée pote avec toi et qu'on continue à se capter de temps en temps malgré nos edt chargés. Trop de souvenirs en soirées dont ton ancien chez toi restera toujours le QG. Un jour faudrait qu'on retourne se bronzer la nouille à Merville, trop bons souvenirs aussi. Gros bisouilles, reste géniale.",
     rotate: "-2deg",
   },
   {
-    imgs: [photo("melissa-1.jpg"), photo("melissa-2.jpg")],
+    imgs: [photo("Melissa-1.jpg"), photo("Melissa-2.jpg")],
     alt: "De Melissa",
     note: "De Melissa : Voir photos.",
     rotate: "1.5deg",
