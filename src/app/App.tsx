@@ -216,7 +216,7 @@ function PageGallery() {
         </div>
         {galleryImages.length === 0 ? (
           <p className="text-center" style={{ fontFamily: "'Lato', sans-serif", color: "#9e7575" }}>
-            Ajoute des photos dans src/assets/gallery pour les voir apparaître ici.
+            L'amitie est l'une des plus belle histoire que l'on peut avoir dans la vie
           </p>
         ) : (
           <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
