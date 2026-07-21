@@ -207,6 +207,11 @@ function PageHero({ onNext }: { onNext: () => void }) {
 }
 // ── PAGE 3: GALLERY ───────────────────────────────────────────────
 function PageGallery() {
+  const [selected, setSelected] = useState<number | null>(null);
+
+  const prev = () => setSelected(i => (i === null ? null : (i - 1 + galleryImages.length) % galleryImages.length));
+  const next = () => setSelected(i => (i === null ? null : (i + 1) % galleryImages.length));
+
   return (
     <div className="w-full h-full overflow-y-auto" style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #fde8e8 100%)" }}>
       <div className="max-w-4xl mx-auto px-6 py-16">
@@ -221,13 +226,72 @@ function PageGallery() {
         ) : (
           <div className="columns-1 sm:columns-2 md:columns-3 gap-4">
             {galleryImages.map((img, i) => (
-              <div key={i} className="break-inside-avoid mb-4 rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer" style={{ background: "#f2e4e1" }}>
+              <div
+                key={i}
+                onClick={() => setSelected(i)}
+                className="break-inside-avoid mb-4 rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+                style={{ background: "#f2e4e1" }}
+              >
                 <img src={img.src} alt={img.alt} className="w-full block" />
               </div>
             ))}
           </div>
         )}
       </div>
+
+      {/* ── Full-screen photo viewer ── */}
+      {selected !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          style={{ background: "rgba(61,43,43,0.85)", backdropFilter: "blur(10px)", animation: "fadeIn 0.3s ease" }}
+          onClick={() => setSelected(null)}
+        >
+          <button
+            onClick={() => setSelected(null)}
+            className="absolute top-4 right-4 w-10 h-10 rounded-full flex items-center justify-center"
+            style={{ background: "rgba(253,245,228,0.9)", color: "#c97b84" }}
+          >
+            <X size={20} />
+          </button>
+
+          {galleryImages.length > 1 && (
+            <>
+              <button
+                onClick={e => { e.stopPropagation(); prev(); }}
+                className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center"
+                style={{ background: "rgba(253,245,228,0.9)", color: "#c97b84" }}
+              >
+                <ArrowLeft size={18} />
+              </button>
+              <button
+                onClick={e => { e.stopPropagation(); next(); }}
+                className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center"
+                style={{ background: "rgba(253,245,228,0.9)", color: "#c97b84" }}
+              >
+                <ArrowRight size={18} />
+              </button>
+            </>
+          )}
+
+          <img
+            key={selected}
+            src={galleryImages[selected].src}
+            alt={galleryImages[selected].alt}
+            onClick={e => e.stopPropagation()}
+            className="block"
+            style={{ maxWidth: "92vw", maxHeight: "88vh", objectFit: "contain", borderRadius: 8, animation: "popIn 0.3s cubic-bezier(0.34,1.4,0.64,1)" }}
+          />
+
+          {galleryImages.length > 1 && (
+            <p
+              className="absolute bottom-4 left-0 right-0 text-center"
+              style={{ fontFamily: "'Lato', sans-serif", fontSize: "0.75rem", letterSpacing: "0.15em", color: "#fdf6f0" }}
+            >
+              {selected + 1} / {galleryImages.length}
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
